@@ -1,0 +1,12 @@
+I developed the Social Media Content Analyzer using the MERN stack because it provides a structured, scalable, and easy-to-maintain architecture. 
+For the frontend, I chose React with Vite to ensure a fast and smooth user experience. I implemented a drag-and-drop upload box where users can 
+upload PDF or image files, along with a live preview and validation checks for file size and format before the upload.
+
+On the backend, I organized the project into routes, controllers, middleware, and database configuration to maintain clarity and modularity. 
+I used Multer for file uploads. After receiving a file, the backend identifies whether it’s a PDF or an image. 
+PDFs are processed using pdf-parse to extract text, while images go through Tesseract.js for OCR. Once the text is extracted,
+I used Google GenAI to generate summaries, suggestions, and improvements.
+
+To ensure smooth performance online, I added proper routing, error handling, and environment variable management. 
+The backend is deployed on Render as a Web Service, and the frontend is hosted as a Static Site. My goal throughout 
+the project was to make the tool simple, fast, and highly accurate for users.
