@@ -39,7 +39,7 @@ export default function Dropzone({ onResult }) {
     try {
       setLoading(true);
       const res = await fetch(
-        "https://social-media-content-analyzer-backend-r124.onrender.com/api/upload",
+        "https://social-media-content-analyzer-872p.onrender.com/api/upload",
         {
           method: "POST",
           body: form,
